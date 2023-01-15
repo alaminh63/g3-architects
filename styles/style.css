@@ -5,7 +5,7 @@
 }
 
 /* -----------------------
-    header section started
+    header styles started
 -------------------- */
 
 /* --navbar section styles-- */
@@ -86,6 +86,14 @@ li {
     margin-bottom: 50px;
     width: 100%;
 }
+
+/* -----------------------
+    header styles ended
+-------------------- */
+
+/* -----------------------
+    main styles started
+-------------------- */
 
 /* quick list section */
 
@@ -220,14 +228,16 @@ li {
 }
 
 /* facts section styles */
-.facts-container{
+.facts-container {
     display: flex;
     padding: 0 200px;
 
 }
-.fact-content{
+
+.fact-content {
     margin-right: 600px;
 }
+
 .fact-title {
     font-weight: 700;
     font-size: 45px;
@@ -241,7 +251,93 @@ li {
     color: #727272;
 }
 
+/* work section styles */
 
+.work-container {
+    display: flex;
+    margin: 0 200px;
+    justify-content: space-evenly;
+    margin-top: 100px;
+    gap: 50px;
+}
+
+.work-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+    padding: 40px;
+}
+
+.work-info h1 {
+    font-weight: 600;
+    font-size: 45px;
+    color: #424242;
+}
+
+.work-info p {
+    font-weight: 600;
+    font-size: 20px;
+    color: #727272;
+}
+
+.last-info {
+    padding: 60px;
+}
+
+/* sponsors styles started */
+
+.sponsors-container {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.sponsors-information h1 {
+    font-weight: 700;
+    font-size: 45px;
+    color: #131313;
+    margin-bottom: 20px;
+}
+
+.sponsors-container p {
+    font-weight: 400;
+    font-size: 16px;
+    color: #727272;
+    margin: 0 500px;
+    margin-bottom: 20px;
+}
+
+.sponsors-company {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 180px;
+    background-color: rgb(255, 255, 255);
+
+}
+
+.sponsors-company img {
+    margin-top: 40px;
+    width: 120px;
+    mix-blend-mode: luminosity;
+
+}
+
+/* -----------------------
+    main styles ended
+-------------------- */
+
+/* -----------------------
+    footer styles started
+-------------------- */
+
+
+/* -----------------------
+    footer styles ended
+-------------------- */
 
 @media screen and (max-width: 576px) {
 
