@@ -333,7 +333,19 @@ li {
 /* -----------------------
     footer styles started
 -------------------- */
+footer {
+    background: #FFF4E7;
+    border-radius: 8px;
+    margin: 0 200px;
+    padding: 20px 10px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 15px;
+    color: #424242;
+    margin-top: 30px;
 
+
+}
 
 /* -----------------------
     footer styles ended
