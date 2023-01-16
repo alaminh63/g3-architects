@@ -1,3 +1,5 @@
+/* ------------started------------- */
+
 * {
     margin: 0;
     font-family: 'Work Sans', sans-serif;
@@ -143,6 +145,7 @@ li {
 }
 
 /* features section styles */
+
 .features-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -263,6 +266,7 @@ li {
 
 
 /* facts section styles */
+
 .facts-container {
     display: flex;
     padding: 0 200px;
@@ -402,9 +406,15 @@ footer {
     footer styles ended
 -------------------- */
 
+
+/*------------------------------------
+           Responsive Area 
+------------------------------------*/
+
+
 @media screen and (max-width: 576px) {
 
-    /* header responsive */
+
     .nav-bar-container {
         flex-direction: column;
         align-items: center;
@@ -450,8 +460,7 @@ footer {
         margin-left: 168px;
     }
 
-    /* main responsive */
-    
+
     .team-images {
         grid-template-columns: 1fr;
     }
@@ -472,57 +481,64 @@ footer {
     .team-image-container img {
         width: 400px;
     }
-    .quick-primary{
+
+    .quick-primary {
         width: 200px;
         margin-top: 20px;
         margin-bottom: 20px;
     }
-    .feature-description{
+
+    .feature-description {
         margin: 0 100px;
     }
-    .features-container{
+
+    .features-container {
         display: flex;
         flex-direction: column;
-        
+
     }
+
     .custom-title {
         margin-bottom: 4px;
     }
-    .architect-image img{
-        
+
+    .architect-image img {
+
         width: 400px;
     }
-    .company-buildings{
+
+    .company-buildings {
         flex-direction: column;
     }
-    .facts-container{
+
+    .facts-container {
         padding: 0 20px;
         text-align: center;
     }
-    .fact-empty{
+
+    .fact-empty {
         display: none;
     }
-    .fact-content{
+
+    .fact-content {
         margin: 0 0 0 0;
     }
-    .work-container{
+
+    .work-container {
         flex-direction: column;
         margin: 0 50px;
         margin-top: 20px;
     }
-    .sponsors-information{
-        
-    }
-    .sponsors-container{
-        
-    }
-    .sponsors-container p{
+
+    .sponsors-container p {
         margin: 0 0 0 0;
     }
-    .sponsors-company{
+
+    .sponsors-company {
         flex-direction: column;
     }
-    footer{
+
+    footer {
         margin: 0;
         margin-top: 20px;
         margin-bottom: 20px;
@@ -531,3 +547,5 @@ footer {
     }
 
 }
+
+/* -----------Ended------------- */
