@@ -12,7 +12,7 @@
 
 header {
     background: rgba(255, 144, 14, 0.1);
-    padding: 0 230px;
+    padding: 0 200px;
     padding-top: 20px;
 }
 
@@ -81,7 +81,11 @@ li {
     padding: 20px 25px;
 }
 
-.banner-iamge {
+.primary-button:hover {
+    background: steelblue;
+}
+
+.banner-image {
     margin-top: 50px;
     margin-bottom: 50px;
     width: 100%;
@@ -217,6 +221,10 @@ li {
     transform: translate(-30px, -100px);
 }
 
+.ten-years-button:hover {
+    background: steelblue;
+}
+
 .ten-years-button h1 {
     font-weight: 700;
     font-size: 45px;
@@ -227,10 +235,38 @@ li {
     font-size: 25px;
 }
 
+/* custom section styles */
+.company-buildings {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.custom-title {
+    color: rgb(253, 254, 255);
+    font-weight: 600;
+    font-size: 20px;
+    background: #b14f09;
+    border-radius: 1px 25px 1px 25px;
+    padding: 20px 25px;
+}
+
+.enviroment-image img {
+    height: 300px;
+    width: 400px;
+    gap: 2px;
+    border-radius: 10%;
+
+}
+
+
+
 /* facts section styles */
 .facts-container {
     display: flex;
     padding: 0 200px;
+    margin-top: 90px;
 
 }
 
@@ -256,10 +292,18 @@ li {
 .work-container {
     display: flex;
     margin: 0 200px;
-    justify-content: space-evenly;
+    justify-content: space-around;
     margin-top: 100px;
     gap: 50px;
 }
+
+.work-info:hover {
+    border-radius: 50%;
+    background: rgba(139, 64, 224, 0.516);
+
+
+}
+
 
 .work-info {
     display: flex;
@@ -269,6 +313,8 @@ li {
     border: 1px solid #FF900E;
     border-radius: 8px;
     padding: 40px;
+    transition: background-color 0.5s ease-out, border-radius 0.5s ease-out;
+
 }
 
 .work-info h1 {
@@ -283,9 +329,11 @@ li {
     color: #727272;
 }
 
+
 .last-info {
     padding: 60px;
 }
+
 
 /* sponsors styles started */
 
@@ -294,6 +342,7 @@ li {
     display: flex;
     flex-direction: column;
     text-align: center;
+
 }
 
 .sponsors-information h1 {
@@ -336,16 +385,18 @@ li {
 footer {
     background: #FFF4E7;
     border-radius: 8px;
-    margin: 0 200px;
-    padding: 20px 10px;
+    margin: 0 180px;
+    padding: 30px 10px;
     text-align: center;
     font-weight: 400;
     font-size: 15px;
     color: #424242;
-    margin-top: 30px;
-
+    margin-top: 60px;
+    margin-bottom: 50px;
 
 }
+
+
 
 /* -----------------------
     footer styles ended
@@ -353,6 +404,54 @@ footer {
 
 @media screen and (max-width: 576px) {
 
+    /* header responsive */
+    .nav-bar-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 20px;
+
+    }
+
+    .menu-items {
+        flex-direction: column;
+        margin-right: 45px;
+        gap: 10px;
+    }
+
+    .nav-menus {
+        margin-top: 10px;
+
+        text-align: center;
+
+    }
+
+    .banner-container {
+        display: grid;
+        grid-template-columns: 1fr;
+
+    }
+
+    .banner-information {
+        margin: 0 90px;
+        margin-bottom: 25px;
+
+
+    }
+
+    .primary-button {
+        margin: 0 200px;
+    }
+
+    .banner-image {
+        height: 200px;
+        width: 400px;
+        margin-left: 168px;
+    }
+
+    /* main responsive */
+    
     .team-images {
         grid-template-columns: 1fr;
     }
@@ -360,7 +459,7 @@ footer {
     .quick-list-container {
         margin: 0;
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     .feature-content {
@@ -373,4 +472,62 @@ footer {
     .team-image-container img {
         width: 400px;
     }
+    .quick-primary{
+        width: 200px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .feature-description{
+        margin: 0 100px;
+    }
+    .features-container{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .custom-title {
+        margin-bottom: 4px;
+    }
+    .architect-image img{
+        
+        width: 400px;
+    }
+    .company-buildings{
+        flex-direction: column;
+    }
+    .facts-container{
+        padding: 0 20px;
+        text-align: center;
+    }
+    .fact-empty{
+        display: none;
+    }
+    .fact-content{
+        margin: 0 0 0 0;
+    }
+    .work-container{
+        flex-direction: column;
+        margin: 0 50px;
+        margin-top: 20px;
+    }
+    .sponsors-information{
+        
+    }
+    .sponsors-container{
+        
+    }
+    .sponsors-container p{
+        margin: 0 0 0 0;
+    }
+    .sponsors-company{
+        flex-direction: column;
+    }
+    footer{
+        margin: 0;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
 }
